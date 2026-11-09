@@ -1,0 +1,27 @@
+:host {
+    display: block;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #172554;
+   
+    border-bottom: 4px solid #38bdf8;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #38bdf8;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #e0f2fe;
+    font-size: 22px;
+}
+
+p {
+    color: #94a3b8;
+}

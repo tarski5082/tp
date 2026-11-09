@@ -1,0 +1,29 @@
+:host {
+    display: block;
+    min-height: 100vh;
+    padding: 30px;
+    background: #0b1120;
+    color: #e2e8f0;
+    font-family: Arial, sans-serif;
+}
+
+.astronaute {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+app-mission-header,
+app-mission-status {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+    .astronaute {
+        grid-template-columns: 1fr;
+    }
+}

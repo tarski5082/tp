@@ -1,0 +1,20 @@
+
+
+
+<div>
+    <h2>{{ produit.nom }}</h2>
+    <img [src]="produit.url"[alt]="produit.nom">
+    <button (click)="ajouter()" [disabled]="produit.stock<=0">Ajouter au panier</button>
+</div>
+<div>
+    {{quantite}}
+</div>
+<div class="input">
+    <button [disabled]="quantite<=0" (click)="moins()">-</button>
+    <button [disabled]="quantite>=produit.stock" (click)="plus()">+</button>
+</div>
+<p>Prix : {{ produit.prix }} €</p>
+<p>Stock : {{ produit.stock }}</p>
+<p>Description : {{ produit.description }}</p>
+
+<div>Prix total : {{quantite*produit.prix}}</div>
